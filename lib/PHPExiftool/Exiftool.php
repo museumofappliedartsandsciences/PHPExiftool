@@ -76,12 +76,13 @@ class Exiftool implements LoggerAwareInterface
 
         $dev = __DIR__ . '/../../vendor/phpexiftool/exiftool/exiftool';
         $packaged = __DIR__ . '/../../../../phpexiftool/exiftool/exiftool';
+        $installed = '/usr/local/bin/exiftool';
 
-        foreach (array($packaged, $dev) as $location) {
+        foreach (array($packaged, $dev, $installed) as $location) {
             if (defined('PHP_WINDOWS_VERSION_BUILD')) {
                 $location .= '.exe';
             }
-
+print_r($location);die;
             if (is_executable($location)) {
                 return $binary = realpath($location);
             }

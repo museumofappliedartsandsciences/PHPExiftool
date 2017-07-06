@@ -1,3 +1,4 @@
 composer.lock
 /vendor
 /tests/lib/PHPExiftool/Test/tmp/
+.DS_Store
