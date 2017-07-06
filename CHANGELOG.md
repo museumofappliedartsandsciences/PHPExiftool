@@ -1,6 +1,11 @@
 CHANGELOG
 ---------
 
+* 0.4.2 (2017-07-06)
+
+  * Removed most tags
+  * Fix to allow directories and files with spaces
+
 * 0.4.1 (2014-09-19)
 
   * Fix some incompatibilities with exiftool v9.70 (@nlegoff)
