@@ -82,7 +82,7 @@ class Exiftool implements LoggerAwareInterface
             if (defined('PHP_WINDOWS_VERSION_BUILD')) {
                 $location .= '.exe';
             }
-print_r($location);die;
+
             if (is_executable($location)) {
                 return $binary = realpath($location);
             }
